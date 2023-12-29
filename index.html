@@ -3,45 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Results summary component</title>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="wrapper wrapper--centered">
+      <div class="summary-result-panel">
+        <h2>Your Result</h2>
+        <p class="result-score">
+          <span>76</span>
+          of 100
+        </p>
+        <div>
+          <h2 class="result-descriptor">Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+      <div class="summary-breakdown-panel">
+        <h2>Summary</h2>
+        <div>
+          <div class="breakdown" data-color="light-red">
+            <div>
+              <img src="./assets/images/icon-reaction.svg" alt="Lightning Bolt Icon">
+              <span>Reaction</span>
+            </div>
+            <p><span>80</span> / 100</p>
+          </div>
+          <div class="breakdown" data-color="orange-yellow">
+            <div>
+              <img src="./assets/images/icon-memory.svg" alt="Brain Icon">
+              <span>Memory</span>
+            </div>
+            <p><span>92</span> / 100</p>
+          </div>
+          <div class="breakdown" data-color="green-teal">
+            <div>
+              <img src="./assets/images/icon-verbal.svg" alt="Speech Bubble Icon">
+              <span>Verbal</span>
+            </div>
+            <p><span>61</span> / 100</p>
+          </div>
+          <div class="breakdown" data-color="cobalt-blue">
+            <div>
+              <img src="./assets/images/icon-visual.svg" alt="Eye Icon">
+              <span>Visual</span>
+            </div>
+            <p><span>72</span> / 100</p>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
